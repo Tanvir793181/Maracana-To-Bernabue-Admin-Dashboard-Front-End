@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Pannel Dashboard |</title>
+    <link rel="stylesheet" href="./admin.css">
+    <!-- Add Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    
+  
+
+<!-- ======================================= Sidebar Structure ================================================== -->
+<div class="sidebar-wrapper">
+    <!-- Toggle Button -->
+    <div class="sidebar-toggler">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- Sidebar Content -->
+    <aside class="sidebar">
+        <!-- Dashboard Header -->
+        <div class="sidebar-header">
+            <h2 class="dashboard-title" id="maracana">
+                <i class="fa-solid fa-futbol" id="icon"></i>
+                <span>Maracana To Bernabéu Control Panel</span>
+            </h2>
+        </div>
+
+        <!-- Menu Items -->
+        <nav class="sidebar-menu">
+            <div class="menu-section">
+                <h3 class="menu-title">News</h3>
+                <a href="./adminNews.html" class="menu-item">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <span>Breaking News</span>
+                </a>
+            </div>
+
+            <div class="menu-section">
+                <h3 class="menu-title">Teams</h3>
+
+                <!-- Brazil Section -->
+                <div class="sub-menu">
+                    <div class="sub-menu-header">
+                        <i class="fa-solid fa-flag"></i>
+                        <span>Brazil</span>
+                    </div>
+                    <a href="../brazil/brazilSquad.html" class="menu-item">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Squad</span>
+                    </a>
+                    <a href="../brazil/brazilUpdates.html" class="menu-item">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>Updates</span>
+                    </a>
+                    <a href="../brazil/brazilAnalysis.html" class="menu-item">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Analysis</span>
+                    </a>
+                    <a href="../brazil/brazilMatches.html" class="menu-item">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>Matches</span>
+                    </a>
+                </div>
+
+                <!-- Real Section -->
+                <div class="sub-menu">
+                    <div class="sub-menu-header">
+                        <i class="fa-solid fa-flag"></i>
+                        <span>Real</span>
+                    </div>
+                    <a href="../madrid/madridSquad.html" class="menu-item">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Squad</span>
+                    </a>
+                    <a href="../madrid/madridUpdates.html" class="menu-item">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>Updates</span>
+                    </a>
+                    <a href="../madrid/madridAnalysis.html" class="menu-item">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Analysis</span>
+                    </a>
+                    <a href="../madrid/madridMatch.html" class="menu-item">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>Matches</span>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+    </aside>
+</div>
+
+
+
+
+<!-- Add this inside your main content area -->
+<main class="dashboard-content">
+    <!-- Header Section -->
+    <header class="dashboard-header">
+        <h1 class="animated-title">Admin Dashboard</h1>
+        <div class="admin-profile">
+            <div class="profile-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <span class="profile-name" id="pName">ADMIN</span>
+        </div>
+    </header>
+    <h3>Technology & Verson Control (MERN)</h3>
+    <br>
+    <br>
+
+
+    <!-- MERN Technology Cards -->
+    <div class="tech-grid">
+        <div class="tech-card mongo">
+            <i class="fa-brands fa-envira"></i>
+            <h3>MongoDB</h3>
+        </div>
+        <div class="tech-card express">
+            <i class="fa-solid fa-server"></i>
+            <h3>Express.js</h3>
+        </div>
+        <div class="tech-card react">
+            <i class="fa-brands fa-react"></i>
+            <h3>React</h3>
+        </div>
+        <div class="tech-card node">
+            <i class="fa-brands fa-node"></i>
+            <h3>Node.js</h3>
+        </div>
+    </div>
+
+    <h2 style="text-align: center;">ADMIN's PROFILE</h2>
+    <br>
+    <br>
+
+
+
+    <!-- Admin Info Cards -->
+    <div class="admin-grid">
+        <div class="admin-card">
+            <div class="admin-avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <h3>Tanvir Ahmed</h3>
+            <p>Senior Administrator</p>
+            <br>
+            <p>Password: vinipele</p>
+        </div>
+        <div class="admin-card">
+            <div class="admin-avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <h3>Tanvir Ahmed</h3>
+
+            <p>Senior Administrator</p>
+            <br>
+            <p>Password: neymargoat</p>
+        </div>
+    </div>
+
+
+
+    <section class="api-dashboard">
+        <h2 class="dashboard-title">API Status Monitor</h2>
+        <div class="api-grid">
+            <!-- News API -->
+            <div class="api-card">
+                <div class="api-icon">
+                    <i class="fa-solid fa-newspaper"></i>
+                </div>
+                <div class="api-info">
+                    <h3>/api/news</h3>
+                    <p>Method: POST</p>
+                    <div class="api-status active">
+                        <span class="status-dot"></span>
+                        running
+                    </div>
+                </div>
+            </div>
+    
+            <!-- real Squad API -->
+            <div class="api-card">
+                <div class="api-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="api-info">
+                    <h3>/api/brazil/Squad</h3>
+                    <p>Method: POST</p>
+                    <div class="api-status active">
+                        <span class="status-dot"></span>
+                        running
+                    </div>
+                </div>
+            </div>
+    
+        
+            <div class="api-card">
+                <div class="api-icon">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="api-info">
+                    <h3>/api/brazil/Updates</h3>
+                    <p>Method: POST</p>
+                    <div class="api-status active">
+                        <span class="status-dot"></span>
+                        running
+                    </div>
+                </div>
+            </div>
+    
+            <div class="api-card">
+                <div class="api-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="api-info">
+                    <h3>/api/brazil/analysis</h3>
+                    <p>Method: POST</p>
+                    <div class="api-status active">
+                        <span class="status-dot"></span>
+                        running
+                    </div>
+                </div>
+            </div>
+
+            <div class="api-card">
+                <div class="api-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <div class="api-info">
+                    <h3>/api/brazil/matches</h3>
+                    <p>Method: POST</p>
+                    <div class="api-status active">
+                        <span class="status-dot"></span>
+                        running
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <div class="api-card">
+                <div class="api-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="api-info">
+                    <h3>/api/madrid/squad</h3>
+                    <p>Method: POST</p>
+                    <div class="api-status active">
+                        <span class="status-dot"></span>
+                        running
+                    </div>
+                </div>
+            </div>
+    
+        
+            <div class="api-card">
+                <div class="api-icon">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="api-info">
+                    <h3>/api/madrid/updates</h3>
+                    <p>Method: POST</p>
+                    <div class="api-status active">
+                        <span class="status-dot"></span>
+                        running
+                    </div>
+                </div>
+            </div>
+    
+            <div class="api-card">
+                <div class="api-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="api-info">
+                    <h3>/api/madrid/analysis</h3>
+                    <p>Method: POST</p>
+                    <div class="api-status active">
+                        <span class="status-dot"></span>
+                        running
+                    </div>
+                </div>
+            </div>
+
+            <div class="api-card">
+                <div class="api-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <div class="api-info">
+                    <h3>/api/madrid/matches</h3>
+                    <p>Method: POST</p>
+                    <div class="api-status active">
+                        <span class="status-dot"></span>
+                        running
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Continue adding cards with appropriate icons -->
+        </div>
+    </section>
+
+
+    <!-- status -->
+    <section class="performance-monitor">
+        <h2 class="section-title">System Performance</h2>
+        <div class="metric-grid">
+            <!-- CPU Card -->
+            <div class="metric-card">
+                <div class="metric-icon cpu">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <div class="metric-content">
+                    <div class="progress-ring">
+                        <svg width="120" height="120">
+                            <circle class="progress-ring__background" cx="60" cy="60" r="40"/>
+                            <circle class="progress-ring__fill cpu" cx="60" cy="60" r="40"/>
+                        </svg>
+                        <span class="percentage">90%</span>
+                    </div>
+                    <h3>CPU Usage</h3>
+                </div>
+            </div>
+    
+            <!-- RAM Card -->
+            <div class="metric-card">
+                <div class="metric-icon ram">
+                    <i class="fa-solid fa-memory"></i>
+                </div>
+                <div class="metric-content">
+                    <div class="progress-ring">
+                        <svg width="120" height="120">
+                            <circle class="progress-ring__background" cx="60" cy="60" r="40"/>
+                            <circle class="progress-ring__fill ram" cx="60" cy="60" r="40"/>
+                        </svg>
+                        <span class="percentage">85%</span>
+                    </div>
+                    <h3>Memory Usage</h3>
+                </div>
+            </div>
+    
+            <!-- SSD Card -->
+            <div class="metric-card">
+                <div class="metric-icon storage">
+                    <i class="fa-solid fa-hard-drive"></i>
+                </div>
+                <div class="metric-content">
+                    <div class="progress-ring">
+                        <svg width="120" height="120">
+                            <circle class="progress-ring__background" cx="60" cy="60" r="40"/>
+                            <circle class="progress-ring__fill storage" cx="60" cy="60" r="40"/>
+                        </svg>
+                        <span class="percentage">50%</span>
+                    </div>
+                    <h3>Storage Usage</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="server-controls">
+        <button class="control-btn restart" onclick="alert('Are YOU SURE?....')">
+            <i class="fa-solid fa-power-off"></i>
+            Restart Server
+        </button>
+        <button class="control-btn kill" onclick="alert('Are YOU SURE?....')">
+            <i class="fa-solid fa-skull"></i>
+            Kill Process
+        </button>
+        <button class="control-btn reset" onclick="alert('Are YOU SURE?....')">
+            <i class="fa-solid fa-arrows-rotate"></i>
+            Reset Server
+        </button>
+    </div>
+  
+
+
+    <section class="tech-specs-container">
+        <!-- Technology Stack -->
+        <div class="tech-specs-stack">
+            <h2 class="tech-specs-heading">
+                <i class="fa-solid fa-layer-group"></i> TECHNOLOGIES
+            </h2>
+            <div class="tech-specs-grid">
+                <div class="tech-specs-card tech-specs-card--mongo">
+                    <i class="fa-solid fa-database"></i>
+                    <span>MongoDB</span>
+                </div>
+                <div class="tech-specs-card tech-specs-card--express">
+                    <i class="fa-solid fa-server"></i>
+                    <span>Express.js</span>
+                </div>
+                <div class="tech-specs-card tech-specs-card--react">
+                    <i class="fa-brands fa-react"></i>
+                    <span>React.js</span>
+                </div>
+                <div class="tech-specs-card tech-specs-card--node">
+                    <i class="fa-brands fa-node"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-specs-card tech-specs-card--tailwind">
+                    <i class="fa-solid fa-palette"></i>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Core Technologies -->
+        <div class="tech-specs-core">
+            <h2 class="tech-specs-heading">
+                <i class="fa-solid fa-code"></i> CORE TECHNOLOGIES
+            </h2>
+            <div class="tech-specs-grid">
+                <div class="tech-specs-card tech-specs-card--html">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-specs-card tech-specs-card--css">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-specs-card tech-specs-card--js">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-specs-card tech-specs-card--git">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+            </div>
+        </div>
+    
+        <!-- System Specifications -->
+        <div class="tech-specs-system">
+            <h2 class="tech-specs-heading">
+                <i class="fa-solid fa-gear"></i> SYSTEM INFO
+            </h2>
+            <div class="tech-specs-grid">
+                <div class="tech-specs-info-card">
+                    <i class="fa-solid fa-user-group"></i>
+                    <div>
+                        <h3>Owners</h3>
+                        <p>Tanvir, Mustafiz</p>
+                    </div>
+                </div>
+                <div class="tech-specs-info-card">
+                    <i class="fa-solid fa-tag"></i>
+                    <div>
+                        <h3>Version</h3>
+                        <p>1.0.0</p>
+                    </div>
+                </div>
+                <div class="tech-specs-info-card">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <div>
+                        <h3>Hosting</h3>
+                        <p>Netlify · Hostinger</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- ==== system specifications ==== -->
+    <section class="sys-specs-container">
+        <h2 class="sys-specs-heading">
+            <i class="fa-solid fa-server"></i> System Specifications
+        </h2>
+        <div class="sys-specs-grid">
+            <!-- CPU -->
+            <div class="sys-specs-card" id="cpu-spec">
+                <div class="sys-specs-icon">
+                    <i class="fa-solid fa-tachometer-alt" id="cpu-icon"></i>
+                </div>
+                <h3>CPU</h3>
+                <p>AMD Ryzen 5600G</p>
+            </div>
+    
+            <!-- RAM -->
+            <div class="sys-specs-card" id="ram-spec">
+                <div class="sys-specs-icon">
+                    <i class="fa-solid fa-sd-card" id="ram-icon"></i>
+                </div>
+                <h3>RAM</h3>
+                <p>8GB 3200MHz</p>
+            </div>
+    
+            <!-- SSD -->
+            <div class="sys-specs-card" id="ssd-spec">
+                <div class="sys-specs-icon">
+                    <i class="fa-solid fa-compact-disc" id="ssd-icon"></i>
+                </div>
+                <h3>SSD</h3>
+                <p>16GB NVMe Gen4</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <!-- ==== system specification end=== -->
+
+
+</main>
+
+<!-- Add this just before </body> -->
+<div class="loading-overlay" id="loader">
+    <div class="loading-spinner"></div>
+</div>
+
+
+
+
+    <script src="./admin.js"></script>
+    <script>
+        let password = prompt("Enter Your Password : ");
+
+        // preset password
+        let admin1 = 'vinipele';
+        let admin2 = 'neymargoat';
+
+       if(password == admin1 || password == admin2){
+        alert("Login Successful")
+       }else{
+        window.location = "./accessDeny.html";
+       }
+        
+        // updating the admin's name
+        if(password == 'vinipele'){
+            document.getElementById("pName").innerHTML = "TANVIR";
+        }else if (password == "neymargoat"){
+            document.getElementById("pName").innerHTML = "MUSTAFIZ";
+        }
+    </script>
+</body>
+</html>
